@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Agent AGI System - Research-Grade Cognitive Architecture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .badges {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .badge {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .btn {
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            padding: 30px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .architecture {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+        
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            color: white;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        .links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: opacity 0.3s;
+        }
+        
+        .links a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Multi-Agent AGI System</h1>
+            <p class="subtitle">Research-Grade Cognitive Architecture for Autonomous Problem Solving</p>
+            
+            <div class="badges">
+                <span class="badge">🐍 Python 3.9+</span>
+                <span class="badge">🤖 5 Specialized Agents</span>
+                <span class="badge">🧪 Research-Grade</span>
+                <span class="badge">📚 MIT License</span>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system" class="btn btn-primary">
+                    📦 View on GitHub
+                </a>
+                <a href="https://stackblitz.com/github/rahul700raj/multi-agent-agi-system" class="btn btn-secondary">
+                    ⚡ Try on StackBlitz
+                </a>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <h2>🎯 What is This?</h2>
+            <p style="font-size: 1.2em; margin: 20px 0;">
+                A modular, research-grade multi-agent system implementing cognitive architecture 
+                with self-learning, planning, reflection, and long-term memory capabilities.
+            </p>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Specialized Agents</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Cognitive Steps</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Possibilities</span>
+                </div>
+            </div>
+            
+            <h2>✨ Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🔍 Researcher Agent</h3>
+                    <p>Information gathering, fact verification, and source credibility assessment with web search integration.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>📋 Planner Agent</h3>
+                    <p>Hierarchical task decomposition, scheduling, and resource allocation using HTN planning.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>⚡ Executor Agent</h3>
+                    <p>Action execution with tool usage including code execution, API calls, and file operations.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🎯 Critic Agent</h3>
+                    <p>Quality assurance, self-evaluation, and improvement suggestions for continuous learning.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>💾 Memory Manager</h3>
+                    <p>Long-term memory with vector database, episodic storage, and semantic knowledge graphs.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🔄 Cognitive Loop</h3>
+                    <p>OBSERVE → THINK → PLAN → ACT → REFLECT → LEARN cycle for autonomous problem solving.</p>
+                </div>
+            </div>
+            
+            <div class="architecture">
+                <h2>🏗️ System Architecture</h2>
+                <pre class="code-block">
+┌─────────────────────────────────────────────────────────────┐
+│                    MULTI-AGENT AGI SYSTEM                   │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
+│  │  RESEARCHER  │  │   PLANNER    │  │   EXECUTOR   │     │
+│  │  Agent 1     │  │   Agent 2    │  │   Agent 3    │     │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘     │
+│         │                 │                 │              │
+│         └─────────────────┼─────────────────┘              │
+│                           │                                │
+│         ┌─────────────────┴─────────────────┐              │
+│         │                                   │              │
+│  ┌──────▼───────┐              ┌───────────▼──────┐       │
+│  │    CRITIC    │              │  MEMORY MANAGER  │       │
+│  │   Agent 4    │              │     Agent 5      │       │
+│  └──────────────┘              └──────────────────┘       │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+                </pre>
+            </div>
+            
+            <h2>🚀 Quick Start</h2>
+            <pre class="code-block">
+# Clone repository
+git clone https://github.com/rahul700raj/multi-agent-agi-system.git
+cd multi-agent-agi-system
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure environment
+cp .env.example .env
+# Add your OPENAI_API_KEY to .env
+
+# Run example
+python examples/simple_task.py
+            </pre>
+            
+            <h2>💻 Basic Usage</h2>
+            <pre class="code-block">
+from core.cognitive_loop import CognitiveSystem
+
+# Initialize system
+system = CognitiveSystem()
+
+# Solve task autonomously
+result = system.solve_task(
+    goal="Research quantum computing advances"
+)
+
+print(f"Status: {result['status']}")
+print(f"Confidence: {result['confidence']:.1%}")
+print(f"Summary: {result['summary']}")
+            </pre>
+            
+            <h2>📚 Documentation</h2>
+            <div class="links">
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system/blob/main/README.md">📖 README</a>
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system/blob/main/ARCHITECTURE.md">🏗️ Architecture</a>
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system/blob/main/RESEARCH.md">🔬 Research</a>
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system/blob/main/docs/QUICKSTART.md">🚀 Quick Start</a>
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system/blob/main/CONTRIBUTING.md">🤝 Contributing</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">
+                Built with 🧠 for advancing AGI research
+            </p>
+            <p>
+                <a href="https://github.com/rahul700raj/multi-agent-agi-system" style="color: white;">
+                    ⭐ Star on GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
